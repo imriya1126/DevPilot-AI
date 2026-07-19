@@ -1,0 +1,133 @@
+.sidebar {
+  width: 290px;
+  height: 100vh;
+  background: #111827;
+  color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  box-sizing: border-box;
+  border-right: 1px solid #1f2937;
+}
+
+.sidebar h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.new-chat {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+  box-shadow: 0 8px 20px rgba(37,99,235,.35);
+}
+
+.new-chat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37,99,235,.45);
+}
+
+.history {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 28px;
+  padding-right: 4px;
+}
+
+.history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 999px;
+}
+
+.history-title {
+  color: #9ca3af;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 14px;
+  margin-bottom: 10px;
+  background: #1f2937;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  transition: all .25s ease;
+}
+
+.history-item:hover {
+  background: #273449;
+  border-color: #3b82f6;
+  transform: translateX(4px);
+}
+
+.history-text {
+  flex: 1;
+  color: #f3f4f6;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: .25s;
+}
+
+.history-item:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+  transform: scale(1.2);
+}
+
+.logout {
+  width: 100%;
+  padding: 14px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #dc2626;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.logout:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
+
+.sidebar button {
+  font-family: inherit;
+}

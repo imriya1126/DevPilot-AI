@@ -1,0 +1,27 @@
+# Environment files (API keys, secrets)
+.env
+backend/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Uploaded files
+uploads/
+
+# Node modules
+frontend/node_modules/
+
+# Build files
+frontend/dist/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
