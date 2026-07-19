@@ -3,7 +3,7 @@ import API from "../services/api";
 import Sidebar from "../components/Sidebar";
 import Message from "../components/Message";
 import ChatInput from "../components/ChatInput";
-import "../styles/Chat.css";
+import "../styles/chat.css";
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
