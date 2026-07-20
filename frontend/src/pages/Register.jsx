@@ -13,13 +13,15 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      await API.post("/users/signup", {
+      const res = await API.post("/users/signup", {
         name,
         email,
         password,
       });
 
       alert("Registration successful!");
+      console.log(res.data);
+
       navigate("/login");
     } catch (err) {
       console.error(err);
@@ -32,11 +34,10 @@ export default function Register() {
   };
 
   return (
-    <div className="auth-container">
-      <h1>🤖 DevPilot AI</h1>
-      <h2>Create Account</h2>
-
+    <div className="register-container">
       <form onSubmit={handleRegister}>
+        <h2>Register</h2>
+
         <input
           type="text"
           placeholder="Full Name"
@@ -62,12 +63,12 @@ export default function Register() {
         />
 
         <button type="submit">Register</button>
-      </form>
 
-      <p>
-        Already have an account?{" "}
-        <Link to="/login">Login</Link>
-      </p>
+        <p>
+          Already have an account?{" "}
+          <Link to="/login">Login</Link>
+        </p>
+      </form>
     </div>
   );
 }
