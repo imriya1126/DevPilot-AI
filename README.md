@@ -1,46 +1,116 @@
-# 🤖 DevPilot AI - Intelligent AI Software Engineer Platform
+# 🤖 DevPilot AI
 
-DevPilot AI is a full-stack AI-powered coding assistant platform that helps developers write code, debug errors, understand documents, and interact with AI through text and voice.
-
-Built with modern web technologies, LLM integration, authentication, document processing, and a responsive developer-focused UI.
+An AI-powered coding assistant that helps developers generate code, debug errors, explain concepts, and improve productivity.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-### 🤖 AI Coding Assistant
-- Ask programming questions
-- Generate code snippets
-- Debug errors
-- Explain algorithms and concepts
-- Get technology guidance
+Frontend: https://dev-pilot-mx82qduz8-imriya1126s-projects.vercel.app
 
-### 📄 Document Intelligence
-- Upload PDF and TXT files
-- Extract text from documents
-- Analyze uploaded content
-- Ask questions related to documents
-
-### 🔐 Authentication System
-- User registration and login
-- JWT-based authentication
-- Secure API access
-
-### 💬 Chat History
-- Store previous conversations
-- View past AI interactions
-- User-specific chat history
-
-### 🎤 Voice Assistant
-- Speech-to-text interaction
-- Voice-based AI queries
-
-### 📝 Developer Friendly UI
-- Markdown rendering
-- Syntax highlighted code blocks
-- Copy code functionality
-- Modern responsive interface
+Backend API: https://devpilot-ai-backend-6d8m.onrender.com
 
 ---
 
-# 🏗️ System Architecture
+## ✨ Features
+
+- 🔐 JWT Authentication (Login & Register)
+- 💬 AI Chat Assistant
+- 📜 Chat History
+- 📁 File Upload
+- 🎤 Voice Input
+- 🌙 Dark / Light Mode
+- 📝 Markdown Rendering
+- 💻 Syntax Highlighted Code Blocks
+- 📋 Copy Code Button
+- ⚡ Responsive UI
+- ☁️ Deployed on Vercel & Render
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Axios
+- React Router
+
+### Backend
+- FastAPI
+- Python
+- JWT Authentication
+- SQLite
+
+### Deployment
+- Vercel
+- Render
+- GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+DevPilot-AI/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── styles/
+│
+├── backend/
+│   ├── app/
+│   ├── api/
+│   ├── database/
+│   └── models/
+│
+└── README.md
+```
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here)
+
+- Login Page
+- Register Page
+- Chat Page
+- Dark Mode
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/imriya1126/DevPilot-AI.git
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+---
+
+## 👩‍💻 Author
+
+**Riya Kakkar**
+
+GitHub:
+https://github.com/imriya1126
