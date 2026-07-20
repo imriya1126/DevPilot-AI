@@ -22,7 +22,7 @@ export default function Register() {
       alert("Registration successful!");
       console.log(res.data);
 
-      navigate("/login");
+      navigate("/");
     } catch (err) {
       console.error(err);
 
@@ -34,10 +34,11 @@ export default function Register() {
   };
 
   return (
-    <div className="register-container">
-      <form onSubmit={handleRegister}>
-        <h2>Register</h2>
+    <div className="auth-container">
+      <h1>🤖 DevPilot AI</h1>
+      <h2>Create Account</h2>
 
+      <form onSubmit={handleRegister}>
         <input
           type="text"
           placeholder="Full Name"
@@ -63,12 +64,12 @@ export default function Register() {
         />
 
         <button type="submit">Register</button>
-
-        <p>
-          Already have an account?{" "}
-          <Link to="/login">Login</Link>
-        </p>
       </form>
+
+      <p>
+        Already have an account?{" "}
+        <Link to="/">Login</Link>
+      </p>
     </div>
   );
 }
