@@ -10,8 +10,9 @@ app = FastAPI(title="DevPilot AI")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://dev-pilot-ai-seven.vercel.app",
         "http://localhost:5173",
+        "https://dev-pilot-ai-seven.vercel.app",
+        "https://dev-pilot-mx82qduz8-imriya1126s-projects.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
