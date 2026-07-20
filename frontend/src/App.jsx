@@ -8,9 +8,9 @@ import Chat from "./pages/Chat";
 import "./styles/theme.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
     if (darkMode) {
