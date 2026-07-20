@@ -13,9 +13,7 @@ body,
 }
 
 body {
-  background: #0f172a;
-  color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 button {
