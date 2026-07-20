@@ -130,3 +130,57 @@ body {
     font-size: 28px;
   }
 }
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark {
+  background: #111827;
+}
+
+body.dark .login-container {
+  background: #111827;
+}
+
+body.dark .login-card {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark .login-card h1 {
+  color: white;
+}
+
+body.dark .login-card p {
+  color: #d1d5db;
+}
+
+body.dark .login-input {
+  background: #111827;
+  color: white;
+  border: 1px solid #374151;
+}
+
+body.dark .login-input::placeholder {
+  color: #9ca3af;
+}
+
+body.dark .password-toggle {
+  color: #93c5fd;
+}
+
+body.dark .login-btn {
+  background: #4f46e5;
+}
+
+body.dark .login-btn:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+body.dark .register-link {
+  color: #d1d5db;
+}
+
+body.dark .register-link a {
+  color: #93c5fd;
+}
